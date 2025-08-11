@@ -1,0 +1,131 @@
+.detailed-country {
+ padding: 3.5rem 3.5rem;
+}
+
+.detailed-country__back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+  margin-bottom: 2.5vw;
+  outline: none;
+  transition: transform 0.2s ease;
+
+}
+
+.detailed-country__back-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.detailed-country__img {
+  width: 35rem;
+  height: auto;
+}
+
+.detailed-country h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 3vw;
+  margin-top: 2.5vw;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.detailed-country__layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 7rem;
+}
+
+.detailed-country__details {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+.detailed-country__details p{
+  padding-bottom: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  align-items: center; 
+  gap: 0.25rem;
+
+}
+.detailed-country__details strong {
+  white-space: nowrap;
+}
+
+.detailed-country__details span {
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .detailed-country {
+    padding: 2rem 1.5rem;
+  }
+
+  .detailed-country__layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .detailed-country__img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+  }
+
+  .detailed-country h3 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .detailed-country__details {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .detailed-country__details p {
+    font-size: 0.95rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .detailed-country__back-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .detailed-country {
+    padding: 1.5rem 1rem;
+  }
+
+  .detailed-country__img {
+    max-width: 100%;
+  }
+
+  .detailed-country h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .detailed-country__details {
+    gap: 1.5rem;
+  }
+
+  .detailed-country__details p {
+    font-size: 0.9rem;
+    gap: 0.3rem;
+  }
+
+  .detailed-country__back-button {
+    font-size: 12px;
+    padding: 0.5rem 1.2rem;
+  }
+}

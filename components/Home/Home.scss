@@ -1,0 +1,104 @@
+.Search_Filter_Container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filterContainer{
+  padding-top: 3.5rem;
+  padding-right: 4.72rem;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border-radius: 3.5px;
+  outline: none;
+  border: 5px;
+}
+
+
+.filterContainer__Menu {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+
+  width: 220px;
+  padding: 14px 48px 14px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #111517;
+
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.05);
+
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%23343a40' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+
+  cursor: pointer;
+}
+
+.countries-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    // padding: 2rem;
+    justify-items: center;
+}
+.countries-container__card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  width:75%;
+  margin-top: 20%;
+  padding-bottom: 20%;
+   border-style: none;
+  outline :none;
+}
+.countries-container__card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.countries-container__card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 4px;
+  margin-bottom: 1rem;  
+}
+.countries-container__card h3{
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+.countries-container__card p{
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width:767px) {
+ 
+.Search_Filter_Container{
+  display: flex;
+  flex-direction: column;
+}
+.filterContainer{
+  padding: 2rem 3rem;
+}
+.countries-container{
+grid-template-columns: repeat(1 , 1fr) ;
+padding-left: 4.5rem;
+padding-right: 4.5rem;
+}
+}
