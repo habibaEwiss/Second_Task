@@ -41,7 +41,9 @@ $text-LightMode :black;
 }
 .dark-mode .search__input{
     background-color: #2b3945;
+    color: white;
 }
+
 .dark-mode .search__input::placeholder {
   color: white;
 }

@@ -102,3 +102,8 @@ padding-left: 4.5rem;
 padding-right: 4.5rem;
 }
 }
+@media only screen and (min-width: 768px) and (max-width:900px) {
+  .countries-container__card{
+    width: 90%;
+  }
+}
